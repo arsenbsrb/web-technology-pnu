@@ -16,6 +16,7 @@ h1 {
 .container {
     padding: 5px;
     border: 2px solid black;
+    background-color: #84a98c;
     text-align: left;
 }
 
