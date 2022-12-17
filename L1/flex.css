@@ -1,0 +1,10 @@
+.caption-block {
+    flex-direction: column;
+    align-items: end;
+}
+
+.main-block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}

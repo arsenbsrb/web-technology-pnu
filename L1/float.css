@@ -1,0 +1,11 @@
+.caption-block {
+    display: inline-block;
+}
+
+.main-block {
+    float: left;
+}
+
+.caption-header {
+    float: right;
+}

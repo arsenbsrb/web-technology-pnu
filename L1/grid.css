@@ -1,0 +1,31 @@
+.caption-block {
+    display: inline-grid;
+    justify-items: end;
+    margin: 10px;
+}
+
+.main-block {
+ display: grid;
+ justify-content: space-evenly;
+}
+
+@media (min-width: 992px)  {
+    .main-block {
+        grid-template-columns: 30% 30% 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .main-block {
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 50% 50%
+    }
+
+    .caption-block:nth-child(3){
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
