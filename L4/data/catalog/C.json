@@ -1,0 +1,54 @@
+{
+  "catalog_items":[
+      {
+          "id":21,
+          "short_name":"C-1",
+          "name":"item-C-1",
+          "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price_retail":null,
+          "price_wholesale":90,
+          "amount_retail":null,
+          "amount_wholesale":"5+ pos"
+      },
+      {
+          "id":22,
+          "short_name":"C-2",
+          "name":"item-C-2",
+          "description":"Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+          "price_retail":80,
+          "price_wholesale":70,
+          "amount_retail":"1+ pos",
+          "amount_wholesale":"4+ pos"
+      },
+      {
+          "id":23,
+          "short_name":"C-3",
+          "name":"item-C-3",
+          "description":"Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut labore.",
+          "price_retail":60,
+          "price_wholesale":50,
+          "amount_retail":"2+ pos",
+          "amount_wholesale":"3+ pos"
+      },
+      {
+          "id":24,
+          "short_name":"C-4",
+          "name":"item-C-4",
+          "description":"Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.",
+          "price_retail":40,
+          "price_wholesale":30,
+          "amount_retail":"3+ pos",
+          "amount_wholesale":"2+ pos"
+      },
+      {
+          "id":25,
+          "short_name":"C-5",
+          "name":"item-C-5",
+          "description":"Lorem ipsum dolor sit amet, do eiusmod.",
+          "price_retail":20,
+          "price_wholesale":10,
+          "amount_retail":"4+ pos",
+          "amount_wholesale":"1+ pos"
+      }
+  ]
+}

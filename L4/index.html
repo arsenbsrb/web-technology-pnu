@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+  <body>
+
+    <div class="nav">
+      <a class="btn" href="index.html">Home</a>
+      <a class="btn" onclick="loadCategories()">Catalog</a>
+    </div>
+
+    <div class="container">
+      <div class="card category bg-warning">
+        <!-- put item.userId & item.id below this -->
+        <div class="card-header category-short_name"></div>
+    
+        <div class="card-body category-body">
+          <!-- put item.title below this -->
+          <h5 class="card-title category-name"></h5>
+          <!-- put item.body below this -->
+          <p class="card-text category-instruction"></p>
+          <img class="category-img" src="" alt="">
+        </div>
+      </div>
+
+
+      <div class="card catalog bg-warning">
+        <!-- put item.userId & item.id below this -->
+        <div class="card-header catalog-short_name"></div>
+    
+        <div class="catalog-body">
+          <!-- put item.title below this -->
+          <h5 class="catalog-name"></h5>
+          <!-- put item.body below this -->
+          <p class="catalog-description"></p>
+          <p class="catalog-price_retail"></p>
+          <p class="catalog-price_wholesale"></p>
+          <p class="catalog-amount_retail"></p>
+          <p class="catalog-amount_wholesale"></p>
+          <img class="catalog-img" src="" alt="" (onClick)="">
+        </div>
+      </div>
+
+    </div>
+    <script src="JS\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
