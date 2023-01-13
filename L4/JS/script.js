@@ -2,7 +2,7 @@ $(loadCategories());
 
 function loadCategories() {
   //hide first div or remove after append using `$(".card:first").remove()`
-  $(".category").hide()
+  $(".category").hide()//With no parameters, the .hide() method is the simplest way to hide an element
   $(".catalog").hide()
   $.ajax({
     url: "data/categories.json",
@@ -14,6 +14,7 @@ function loadCategories() {
         var name = item.name;
         var instruction = item.special_instruction;
         var url = item.url;
+        
         //add values inside divs
         $(categories).find(".category-short_name").html(shortName);
         $(categories).find(".category-name").html(name);
@@ -46,6 +47,7 @@ function loadCatalogs(categoryShortName, link) {
           var price_wholesale = item.price_wholesale;
           var amount_retail = item.amount_retail;
           var amount_wholesale = item.amount_wholesale;
+          
           //add values inside divs
           $(catalogs).find(".catalog-short_name").html(shortName);
           $(catalogs).find(".catalog-name").html(name);
