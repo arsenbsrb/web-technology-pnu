@@ -19,7 +19,7 @@
     -webkit-box-sizing: border-box;     /*Safari до версії 5.0, Chrome до версії 10.0, Android до версії 4.0 і iOS Safari до версії 5.0*/
 }
 
-/*Видаляємо лінії обводки у деяких браузерів*/
+/*Видаляємо лінії обводки деяких браузерів*/
 :focus,:active{outline:none;}
 a:focus,a:active{outline:none;}
 
