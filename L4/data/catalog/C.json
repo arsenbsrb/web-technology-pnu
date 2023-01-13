@@ -8,7 +8,7 @@
           "price_retail":null,
           "price_wholesale":90,
           "amount_retail":null,
-          "amount_wholesale":"5+ pos"
+          "amount_wholesale":"5+ "
       },
       {
           "id":22,
@@ -17,8 +17,8 @@
           "description":"Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
           "price_retail":80,
           "price_wholesale":70,
-          "amount_retail":"1+ pos",
-          "amount_wholesale":"4+ pos"
+          "amount_retail":"1+ ",
+          "amount_wholesale":"4+ "
       },
       {
           "id":23,
@@ -27,8 +27,8 @@
           "description":"Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut labore.",
           "price_retail":60,
           "price_wholesale":50,
-          "amount_retail":"2+ pos",
-          "amount_wholesale":"3+ pos"
+          "amount_retail":"2+ ",
+          "amount_wholesale":"3+ "
       },
       {
           "id":24,
@@ -37,8 +37,8 @@
           "description":"Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.",
           "price_retail":40,
           "price_wholesale":30,
-          "amount_retail":"3+ pos",
-          "amount_wholesale":"2+ pos"
+          "amount_retail":"3+ ",
+          "amount_wholesale":"2+ "
       },
       {
           "id":25,
@@ -47,8 +47,8 @@
           "description":"Lorem ipsum dolor sit amet, do eiusmod.",
           "price_retail":20,
           "price_wholesale":10,
-          "amount_retail":"4+ pos",
-          "amount_wholesale":"1+ pos"
+          "amount_retail":"4+ ",
+          "amount_wholesale":"1+ "
       }
   ]
 }
