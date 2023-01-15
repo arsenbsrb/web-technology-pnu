@@ -4,7 +4,7 @@ const randBtn = document.querySelector('.rand');
 catalogBtn.onclick = function () {
     document.querySelector('.category_items').innerText = '';
     $.ajax('data.json', {
-        success: fSuccess
+        success: fCatalog
     });
 }
 
@@ -38,10 +38,9 @@ function fRand(data) {
     document.querySelector('.category_title').innerText = keys[randIndex];
 }
 
-function fSuccess(data) {
+function fCatalog(data) {
     Object.entries(data).forEach(([key, value]) => {
         const block = document.createElement('button');
-        if(block === null){
             block.onclick = function () {
                 document.querySelector('.categories').innerText = '';
                 document.querySelector('.category_items').innerText = '';
@@ -62,9 +61,5 @@ function fSuccess(data) {
             block.innerText = key;
             block.className = 'category_btn';
             document.querySelector('.categories').appendChild(block);
-        } else {
-            return 0;
-        }
-        
     });
 }
