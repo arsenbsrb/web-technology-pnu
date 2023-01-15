@@ -2,12 +2,12 @@ $(loadCategories());
 
 // rand Category
 // use func loadCatalogs
-function randCatalog(categoryShortName, link) {
+function randCatalog() {
   //hide first div or remove after append using `$(".card:first").remove()`
   $(".category").hide()
   $(".catalog").hide()
   $.ajax({
-    url: link,
+    //url: link,
     success: function(result) {
       $.each(result.catalog_items, function(index, item) {
         
