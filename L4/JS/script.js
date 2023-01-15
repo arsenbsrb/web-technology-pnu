@@ -1,6 +1,10 @@
 $(loadCategories());
 
-function randCategory() {
+// rand Category
+// use func 
+
+
+function randCategory(categoryShortName, link) {
   //hide first div or remove after append using `$(".card:first").remove()`
   $(".category").hide()
   $(".catalog").hide()
@@ -8,7 +12,6 @@ function randCategory() {
     url: link,
     success: function(result) {
       $.each(result.catalog_items, function(index, item) {
-        
         var catalogs = $(".catalog:first").clone() //clone first divs
         var id = item.id;
         var shortName = item.short_name;
