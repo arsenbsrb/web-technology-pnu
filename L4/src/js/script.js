@@ -41,25 +41,30 @@ function fRand(data) {
 function fSuccess(data) {
     Object.entries(data).forEach(([key, value]) => {
         const block = document.createElement('button');
-        block.onclick = function () {
-            document.querySelector('.categories').innerText = '';
-            document.querySelector('.category_items').innerText = '';
-            document.querySelector('.category_title').innerText = key;
-            for (let j = 0; j < value.length; j++) {
-                const item = document.createElement('div');
-                const price = document.createElement('div');
-                item.className = 'item';
-                price.className = 'price';
-                item.innerText = value[j].id + '\n' + value[j].name + '\n' + value[j].description;
-                price.innerHTML = value[j].shortName + ' - Price: ' + value[j].price + 'uah';
-                item.style.background = "url(\"src/photo/" + value[j].photo + "\")";
-                document.querySelector('.category_items').appendChild(item);
-                document.querySelector('.category_items').appendChild(price);
+        if(block=null){
+            block.onclick = function () {
+                document.querySelector('.categories').innerText = '';
+                document.querySelector('.category_items').innerText = '';
+                document.querySelector('.category_title').innerText = key;
+                for (let j = 0; j < value.length; j++) {
+                    const item = document.createElement('div');
+                    const price = document.createElement('div');
+                    item.className = 'item';
+                    price.className = 'price';
+                    item.innerText = value[j].id + '\n' + value[j].name + '\n' + value[j].description;
+                    price.innerHTML = value[j].shortName + ' - Price: ' + value[j].price + 'uah';
+                    item.style.background = "url(\"src/photo/" + value[j].photo + "\")";
+                    document.querySelector('.category_items').appendChild(item);
+                    document.querySelector('.category_items').appendChild(price);
+                }
             }
+            document.querySelector('.category_title').innerText = '';
+            block.innerText = key;
+            block.className = 'category_btn';
+            document.querySelector('.categories').appendChild(block);
+        } else {
+            return 0;
         }
-        document.querySelector('.category_title').innerText = '';
-        block.innerText = key;
-        block.className = 'category_btn';
-        document.querySelector('.categories').appendChild(block);
+        
     });
 }
