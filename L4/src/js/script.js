@@ -41,7 +41,7 @@ function fRand(data) {
 function fSuccess(data) {
     Object.entries(data).forEach(([key, value]) => {
         const block = document.createElement('button');
-        if(block=null){
+        if(block === null){
             block.onclick = function () {
                 document.querySelector('.categories').innerText = '';
                 document.querySelector('.category_items').innerText = '';
