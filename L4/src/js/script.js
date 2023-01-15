@@ -30,7 +30,7 @@ function funcRand(data) {
         item.className = 'item';
         price.className = 'price';
         
-        item.innerText = datas[i].id + '. ' + datas[i].name + '\n' + datas[i].description;
+        item.innerText = datas[i].id + '\n' + datas[i].name + '\n' + datas[i].description;
         price.innerHTML = datas[i].shortName + ' - Price: ' + datas[i].price + '$';
         
         item.style.background = "url(\"src/photo/" + datas[i].photo + "\")";
@@ -56,7 +56,7 @@ function funcSuccess(data) {
                 const price = document.createElement('div');
                 item.className = 'item';
                 price.className = 'price';
-                item.innerText = value[j].id + '. ' + value[j].name + '\n' + value[j].description;
+                item.innerText = value[j].id + '\n' + value[j].name + '\n' + value[j].description;
                 price.innerHTML = value[j].shortName + ' - Price: ' + value[j].price + '$';
                 item.style.background = "url(\"src/photo/" + value[j].photo + "\")";
                 document.querySelector('.category_items').appendChild(item);
