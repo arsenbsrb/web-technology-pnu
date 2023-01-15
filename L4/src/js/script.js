@@ -1,50 +1,44 @@
 const catalogBtn = document.querySelector('.catalog');
-const specialBtn = document.querySelector('.rand');
+const randBtn = document.querySelector('.rand');
 
 catalogBtn.onclick = function () {
     document.querySelector('.category_items').innerText = '';
     $.ajax('data.json', {
-        success: funcSuccess
+        success: fSuccess
     });
 }
 
-specialBtn.onclick = function () {
+randBtn.onclick = function () {
     $.ajax('data.json', {
-        success: funcRand
+        success: fRand
     })
 }
 
-function funcRand(data) {
-
+function fRand(data) {
     document.querySelector('.category_items').innerText = '';
     document.querySelector('.categories').innerText = '';
     
     const keys = Object.keys(data);
     const randIndex = Math.floor(Math.random() * keys.length);
     const randKey = keys[randIndex];
-    const datas = data[randKey];
+    const wdata = data[randKey];
     
-    for (let i = 0; i < datas.length; i++) {
+    for (let i = 0; i < wdata.length; i++) {
         const item = document.createElement('div');
         const price = document.createElement('div');
         item.className = 'item';
         price.className = 'price';
+        item.innerText = wdata[i].id + '\n' + wdata[i].name + '\n' + wdata[i].description;
+        price.innerHTML = wdata[i].shortName + ' - Price: ' + wdata[i].price + 'uah';
+        item.style.background = "url(\"src/photo/" + wdata[i].photo + "\")";
         
-        item.innerText = datas[i].id + '\n' + datas[i].name + '\n' + datas[i].description;
-        price.innerHTML = datas[i].shortName + ' - Price: ' + datas[i].price + '$';
-        
-        item.style.background = "url(\"src/photo/" + datas[i].photo + "\")";
         document.querySelector('.category_items').appendChild(item);
         document.querySelector('.category_items').appendChild(price);
     }
-    
     document.querySelector('.category_title').innerText = keys[randIndex];
 }
 
-
-
-
-function funcSuccess(data) {
+function fSuccess(data) {
     Object.entries(data).forEach(([key, value]) => {
         const block = document.createElement('button');
         block.onclick = function () {
@@ -57,7 +51,7 @@ function funcSuccess(data) {
                 item.className = 'item';
                 price.className = 'price';
                 item.innerText = value[j].id + '\n' + value[j].name + '\n' + value[j].description;
-                price.innerHTML = value[j].shortName + ' - Price: ' + value[j].price + '$';
+                price.innerHTML = value[j].shortName + ' - Price: ' + value[j].price + 'uah';
                 item.style.background = "url(\"src/photo/" + value[j].photo + "\")";
                 document.querySelector('.category_items').appendChild(item);
                 document.querySelector('.category_items').appendChild(price);
